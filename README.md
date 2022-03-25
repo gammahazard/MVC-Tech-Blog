@@ -34,7 +34,11 @@
 
   ![]()
 
----
+![addcomment](https://user-images.githubusercontent.com/92896466/160207651-0a9928df-63e2-4ebd-87f6-0408dd277a32.png)
+![dashboard](https://user-images.githubusercontent.com/92896466/160207655-382f3ac6-fe08-4a7f-bc88-f5ab3b864de0.png)
+![editpost](https://user-images.githubusercontent.com/92896466/160207657-d8a02e02-5fae-4238-bc6e-fb3c8ad6e4c4.png)
+![homepage](https://user-images.githubusercontent.com/92896466/160207659-39e77d1d-5d21-4ba9-a8aa-d82e2df6b8ac.png)
+
 
 ## Installation:
   Simply clone the repo, navigate to the cloned repo in your command line terminal and run npm install, once packages have been installed run node server.js and navigate to localhost:3001 in your web browser.
