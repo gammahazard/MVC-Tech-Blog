@@ -3,12 +3,10 @@
   color: black;
   padding: 30px;
 }
-.darkmode--activated div{
-  background-color:black;;
+.darkmode--activated header{
+  background-color:transparent;
 }
-.darkmode--activated footer {
-  color:white;
-}
+
 div.header-box {
 margin:auto;
 }
