@@ -1,0 +1,6 @@
+{{#each posts as |post|}}
+<a class="list-group btn list-item main-list single-post" href="/posts/{{post.id}}">
+    <span class="float-left">{{post.title}}</span>
+    <span class="float-right">by {{user.name}} at {{format_date date_created}}</span>
+</a>
+{{/each}}

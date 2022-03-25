@@ -1,0 +1,24 @@
+
+
+{{#if posts.length}}
+{{#each posts as |post|}}
+<a href="/dashboard/edit/{{id}}">
+    <div class="card dashboard-card" id="techcard">
+        <div class="list-item">
+            <div class="card-header">
+                <span>{{post.title}}</span>
+                <span class="float-right">Posted on {{format_date date_created}}</span>
+            </div>
+            <div class="card-body content-card" id="cardcontent">
+                {{post.content}}
+            </div>
+        </div>
+    </div>
+</a>
+{{/each}}
+{{/if}}
+<div class="container mt-5">
+    <div class="d-flex justify-content-center">
+        <a type="button" class="btn btn-dark" href="/dashboard/newpost">+ Provoke New Discussion +</a>
+    </div>
+</div>

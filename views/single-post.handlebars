@@ -1,0 +1,50 @@
+<a class="list-group btn list-item main-list single-post" data-toggle="collapse" href="#collapseExample" role="button"
+    aria-expanded="false" aria-controls="collapseExample">
+    <span class="float-left" style="font-size:25px;">Post Title:     {{title}}</span>
+</a>
+<div class="collapse mb-3" id="collapseExample">
+    <div class="card dashboard-card">
+        <div class="list-item">
+            <div class="card-header">
+                <span>Title:  {{title}}</span>
+                <span class="float-right" style="font-size=75%">Post by {{user.name}} at {{format_date date_created}}</span>
+            </div>
+            <div class="card-body content-card" style="font-size:150%; text-align:center;">
+                {{content}}
+            </div>
+        </div>
+    </div>
+    <div class="card dashboard-card">
+        <div class="card-header">
+            <h4 style="font-size:19px; text-align:center;">What do you think?</h4>
+        </div>
+        <form method="POST" action="/api/comments" class="card-body">
+            <div class="card-body content-card">
+                <div class="form-group">
+                    <label for="post_id">Post #:</label>
+                    <input type="text" name="post_id" value="{{id}}" id="post_id" readonly />
+                </div>
+                <div class="form-group">
+                    <label for="user_name">User Name:</label>
+                    <input type="text" name="user_name" value="{{logged_name}}" id="user_name" readonly />
+                </div>
+                <div class="form-group">
+                    <label for="commentary">Comment</label>
+                    <textarea type="text" name="commentary" id="commentary" class="col-sm-12 form-input"></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark col-sm-12">Comment</button>
+            </div>
+        </form>
+    </div>
+</div>
+{{#each comments as |comment|}}
+<div class="card dashboard-card">
+    <div class="card-header" style="text-align:center;">
+        <h4 style="font-size:19px;">Comment</h4>
+    </div>
+    <div class="card-body content-card">
+        <h4>{{commentary}}</h4>
+        <footer class="blockquote-footer">From {{user_name}} at {{format_date date_created}}</footer>
+    </div>
+</div>
+{{/each}}

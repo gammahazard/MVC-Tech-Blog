@@ -1,0 +1,90 @@
+.header-style {
+  background-color: darkslategrey;
+  color: black;
+  padding: 30px;
+}
+
+div.header-box {
+margin:auto;
+}
+nav a {
+  font-size: large;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.header-box {
+  background-color: darkslategrey;
+  margin: 10px;
+  width: 360px;
+  opacity: 0.8;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 6px 5px black
+}
+
+.header-txt {
+  margin: 10px;
+  padding: 10px;
+  font-size: 36px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+body {
+  background-color: white
+}
+
+.log-form {
+  border: black;
+  border-style: double;
+  background-color: beige;
+}
+
+.sign-form {
+  border: black;
+  border-style: double;
+  background-color: beige;
+}
+
+.new-post {
+  background-color: darkred;
+  font-weight: 700;
+  color: aliceblue;
+}
+
+.list-group {
+  padding: 1%;
+}
+
+.main-list {
+  color: aliceblue;
+  margin-bottom: 20px;
+  padding: 2.5%;
+  border-radius: 20px;
+  background-color: rgb(119, 53, 53);
+  text-decoration: none;
+}
+
+.content-card {
+  padding: 2%;
+  text-decoration: none;
+  background-color: beige;
+  color: black;
+}
+
+.dashboard-card {
+  color: beige;
+  margin-bottom:15px;
+  background-color: rgb(252, 92, 92);
+}
+
+
+
+.single-post {
+  padding: 0.4rem .5rem;
+}
+.single-post:hover{
+  background-color:rgb(0, 0, 0);
+  color:white;
+}
