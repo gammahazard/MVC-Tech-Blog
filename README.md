@@ -8,7 +8,7 @@
 
   [A deployed version can be viewed here.:]
   
-  (Will be updated soon)
+  https://techblogmvc1221.herokuapp.com/
   
 ---
 
