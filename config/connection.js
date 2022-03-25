@@ -11,7 +11,7 @@ let sequelize;
         process.env.DB_USER,
         process.env.DB_PASSWORD,
           {
-          host: 'localhost',
+          host: 'y5svr1t2r5xudqeq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
           dialect: 'mysql',
           port: 3306
          }
